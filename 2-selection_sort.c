@@ -12,6 +12,9 @@ void selection_sort(int *array, size_t size)
 {
 	size_t i, j;
 
+    if (!array || !size)
+		return;
+
 	/* Outer loop for traversing the array */
 	for (i = 0; i < size - 1; i++)
 	{
@@ -37,14 +40,7 @@ void selection_sort(int *array, size_t size)
 			array[min_index] = temp;
 
 			/* Print the array after each swap */
-			for (k = 0; k < size; k++)
-			{
-				printf("%d", array[k]);
-				if (k != size - 1)
-					printf(", ");
-				else
-					printf("\n");
-			}
+			print_array(array, size);
 		}
 	}
 }
