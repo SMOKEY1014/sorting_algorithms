@@ -32,7 +32,7 @@ void selection_sort(int *array, size_t size)
 		/* Swap the current element with the minimum element */
 		if (min_index != i)
 		{
-			size_t k;
+			
 
 			int temp = array[i];
 
