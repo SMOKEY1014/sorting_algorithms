@@ -10,9 +10,9 @@
 void bubble_sort(int *array, size_t size)
 {
 	size_t i, j;
-    int temp;
+	int temp;
 
-    if (!array || !size)
+	if (!array || !size)
 		return;
 
 	/* Outer loop for traversing the array */
@@ -28,8 +28,8 @@ void bubble_sort(int *array, size_t size)
 
 				array[j] = array[j + 1];
 				array[j + 1] = temp;
-                /* Print the array after every outer loop iteration */
-                print_array(array, size);
+				/* Print the array after every outer loop iteration */
+				print_array(array, size);
 			}
 		}
 	}

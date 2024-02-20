@@ -12,7 +12,7 @@ void selection_sort(int *array, size_t size)
 {
 	size_t i, j;
 
-    if (!array || !size)
+	if (!array || !size)
 		return;
 
 	/* Outer loop for traversing the array */
